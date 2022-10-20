@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart';
+import 'package:flutter_test_app/pages/home_page_getx.dart';
+//import 'pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: const HomePageGetx(),
+      //home: const HomePage(),
     );
   }
 }

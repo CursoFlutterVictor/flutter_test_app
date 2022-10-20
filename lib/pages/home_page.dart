@@ -4,7 +4,7 @@ import 'package:flutter_test_app/utils/counter.dart';
 final Counter c = Counter();
 
 class HomePage extends StatefulWidget {
-  HomePage({Key? key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
