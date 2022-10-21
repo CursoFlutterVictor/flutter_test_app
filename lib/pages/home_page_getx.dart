@@ -52,6 +52,7 @@ class HomePageGetx extends StatelessWidget {
               icon: Icons.arrow_right,
               onPressed: () {
                 Get.to(() => const Page2());
+                //Get.off(() => const Page2());
               },
               heroTag: "BotonRight")
         ],

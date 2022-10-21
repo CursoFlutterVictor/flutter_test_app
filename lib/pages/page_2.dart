@@ -8,14 +8,14 @@ class Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    CounterController counter = Get.find();
+    CounterController counterController = Get.find();
     return Scaffold(
         appBar: AppBar(),
         body: Center(
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           const Text("HOLA PAGINA 2"),
-          Text(counter.result.value.toString()),
+          Text(counterController.result.value.toString()),
         ])),
         floatingActionButton: ButtonControl(
             onPressed: () {
