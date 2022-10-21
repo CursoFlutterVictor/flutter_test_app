@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_test_app/pages/page_2.dart';
 import 'package:flutter_test_app/widgets/button_control.dart';
 import 'package:get/get.dart';
 import 'package:flutter_test_app/controller/counter_controller.dart';
@@ -19,6 +20,7 @@ class HomePageGetx extends StatelessWidget {
             onPressed: () {
               counterController.increment();
             },
+            heroTag: "Boton+",
           ),
           const SizedBox(
             width: 30,
@@ -28,11 +30,13 @@ class HomePageGetx extends StatelessWidget {
             onPressed: () {
               counterController.decrement();
             },
+            heroTag: "Boton-",
           ),
           const SizedBox(
             width: 30,
           ),
           FloatingActionButton(
+            heroTag: "botonAC",
             onPressed: () {
               counterController.clear();
             },
@@ -41,6 +45,15 @@ class HomePageGetx extends StatelessWidget {
               style: TextStyle(fontSize: 20),
             ),
           ),
+          const SizedBox(
+            width: 10,
+          ),
+          ButtonControl(
+              icon: Icons.arrow_right,
+              onPressed: () {
+                Get.to(() => const Page2());
+              },
+              heroTag: "BotonRight")
         ],
       ),
       body: Obx(
