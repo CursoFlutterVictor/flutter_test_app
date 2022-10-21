@@ -6,7 +6,7 @@ class ButtonControl extends StatelessWidget {
   final String? heroTag;
   const ButtonControl({
     Key? key,
-    String? this.heroTag,
+    this.heroTag,
     required this.onPressed,
     required this.icon,
   }) : super(key: key);
