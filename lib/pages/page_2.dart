@@ -8,7 +8,7 @@ class Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    CounterController counterController = Get.find();
+    final CounterController counterController = Get.find();
     return Scaffold(
         appBar: AppBar(),
         body: Center(
