@@ -45,13 +45,14 @@ class HomePageBinding extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            width: 10,
+            width: 80,
           ),
           ButtonControl(
               icon: Icons.arrow_right,
               onPressed: () {
                 //Get.toNamed("/PAGE2");
-                Get.offNamed("/PAGE2");
+                //Get.offNamed("/PAGE2");
+                Get.toNamed("/PAGE2");
               },
               heroTag: "BotonRight")
         ],

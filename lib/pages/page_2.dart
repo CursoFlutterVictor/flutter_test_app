@@ -19,10 +19,23 @@ class Page2 extends StatelessWidget {
             () => Text(counterController.result.value.toString()),
           )
         ])),
-        floatingActionButton: ButtonControl(
-            onPressed: () {
-              Get.back();
-            },
-            icon: Icons.back_hand));
+        floatingActionButton: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            ButtonControl(
+                onPressed: () {
+                  Get.back();
+                },
+                icon: Icons.arrow_left),
+            const SizedBox(
+              width: 30,
+            ),
+            ButtonControl(
+                onPressed: () {
+                  Get.toNamed("/PAGE3");
+                },
+                icon: Icons.arrow_right),
+          ],
+        ));
   }
 }
