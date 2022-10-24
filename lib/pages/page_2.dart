@@ -15,7 +15,9 @@ class Page2 extends StatelessWidget {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           const Text("HOLA PAGINA 2"),
-          Text(counterController.result.value.toString()),
+          Obx(
+            () => Text(counterController.result.value.toString()),
+          )
         ])),
         floatingActionButton: ButtonControl(
             onPressed: () {
